@@ -101,14 +101,15 @@
 
 			}
 
-			$(window).blur(function() {
-				if ($('.bubbles-go-down').not(".scrolled-down")) $('.bubbles-go-down').click();
-			});
-
-
 			//clearInterval(observeInvetrval)
 
 		}, 1500)
+
+		$(window).blur(function() {
+			setInterval(() => { if ($('.bubbles-go-down').not(".scrolled-down")) $('.bubbles-go-down').click(); }, 2000)
+		});
 	}
+
+
 	setTimeout(appLoop, 5000)
 })()
