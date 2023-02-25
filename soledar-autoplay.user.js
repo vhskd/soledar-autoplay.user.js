@@ -101,6 +101,10 @@
 
 			}
 
+			$(window).blur(function() {
+				if ($('.bubbles-go-down').not(".scrolled-down")) $('.bubbles-go-down').click();
+			});
+
 
 			//clearInterval(observeInvetrval)
 
