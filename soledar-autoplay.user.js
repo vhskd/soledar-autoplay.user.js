@@ -105,7 +105,13 @@
 
 		}, 1500)
 
-		setInterval(() => { if ($('.bubbles-go-down').not(".scrolled-down")) $('.bubbles-go-down').click(); }, 2000)
+		let downInterval;
+		$(window).blur(() => {
+			downInterval = setInterval(() => { if ($('.bubbles-go-down').not(".scrolled-down")) $('.bubbles-go-down').click(); }, 2000);
+		});
+		$(window).focus(() => {
+			downInterval = null;
+		})
 	}
 
 
