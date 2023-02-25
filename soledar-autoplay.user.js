@@ -8,6 +8,7 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tampermonkey.net
 // @grant        none
 // @require http://code.jquery.com/jquery-latest.js
+// @updates https://github.com/vhskd/soledar-autoplay.user.js/raw/main/soledar-autoplay.user.js
 // ==/UserScript==
 
 (() => {
