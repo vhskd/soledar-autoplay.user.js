@@ -69,9 +69,9 @@
 						// ClickedByBot.push(el.data("mid"))
 						$(btn).click()
 					}
-					delete(btn);
-					delete(rnd);
-					delete(match);
+					btn = null;
+					rnd = null;
+					match = null;
 				}
 
 				for (let i in al_m) {
