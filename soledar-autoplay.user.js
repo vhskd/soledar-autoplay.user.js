@@ -105,9 +105,7 @@
 
 		}, 1500)
 
-		$(window).blur(function() {
-			setInterval(() => { if ($('.bubbles-go-down').not(".scrolled-down")) $('.bubbles-go-down').click(); }, 2000)
-		});
+		setInterval(() => { if ($('.bubbles-go-down').not(".scrolled-down")) $('.bubbles-go-down').click(); }, 2000)
 	}
 
 
