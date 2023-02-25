@@ -111,7 +111,11 @@
 			return document.hidden || document.msHidden || document.webkitHidden || document.mozHidden;
 		}
 		$(window).blur(() => {
-			downInterval = setInterval(() => { if (isPageHidden() && $('.bubbles-go-down').not(".scrolled-down")) $('.bubbles-go-down').click(); }, 2000);
+			downInterval = setInterval(() => {
+				if (isPageHidden() && $('.bubbles-go-down').not(".scrolled-down")) {
+					$('.bubbles-go-down').click();
+				}
+			}, 2000);
 		});
 		$(window).focus(() => {
 			downInterval = null;
